@@ -222,9 +222,38 @@
         </div>
         </section>
     </footer>
-    <div class="form is-hidden" data-modal >
-        <div class="form-bg" data-modal-close >
-            <button type="button" class="form-bt"><svg width="11" height="11" class="icon icon-Vector"><use href="./img/icons.svg#icon-Vector"></use></svg></button>
+    <div class="forma is-hidden" data-modal >
+        <div class="forma-bg" >
+            <button data-modal-close  type="button" class="forma-bt"><svg width="11" height="11" class="icon icon-Vector"><use href="./img/icons.svg#icon-Vector"></use></svg></button>
+            <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
+
+            <form action="">
+
+            <div class="modal-imput-group"> <label for="name">Iм'я</label>
+                <input type="text" class="modal-input" id="name" name="name" required>
+            </div>
+
+                <div class="modal-imput-group"><label for="tel">Телефон</label>
+                    <input type="tel" class="modal-input" id="tel" name="tel" required>
+            </div>
+
+                <div class="modal-imput-group">
+                <label for="email">Пошта</label>
+                <input type="email" class="modal-input" id="email" name="email" required> 
+            </div>
+
+                <div class="modal-imput-group">
+                <label for="comment">Коментар</label>
+                <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal-text"></textarea>
+            </div>
+            <fieldset class="contract-box">
+                <input type="checkbox" name="contract" id="contract" required>
+                <label for="contract">Погоджуюся з розсилкою та приймаю <span><a href="#" target="_blank">Умови договору</a></span></label>
+            </fieldset>
+
+               <div class="btn-sumbit"> <button type="submit" class="form-btn">Відправити</button></div>
+            </form>
+            
         </div>
     </div>
     <script src="./js/modal.js"></script>
