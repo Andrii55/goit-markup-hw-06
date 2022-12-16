@@ -856,10 +856,11 @@ display: block;
 }
 .modal-imput-group:nth-child(5){
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* .modal-imput-group2{
-    margin-bottom: 30px;
-} */
+
 
 
 .modal-input{
